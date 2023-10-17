@@ -140,8 +140,8 @@ body {
 .point {
     grid-row: 4 / 5;
     grid-column: 4 / 5;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background-color: green;
     border: 5px solid white;
     border-radius: 50%;
@@ -164,10 +164,47 @@ body {
 .big-arrow {
     width: 5px;
     height: 90px;
+    animation: minutes 60s linear infinite;
 }
 
 .small-arrow {
     width: 7px;
-    height: 70px;
+    height: 78px;
     background-color: red;
+    animation: hours 300s linear infinite;
+}
+
+@keyframes hours {
+   0% {
+    transform:  translate(0) rotate(0);
+   } 
+   25% {
+    transform:translate(-34px, -33px) rotate(90deg);
+   } 
+   50% {
+    transform:translate(0px, -70px) rotate(180deg);
+   }
+   75% {
+    transform:translate(25px, -33px) rotate(270deg);
+   }
+   100% {
+    transform:translate(0px, 0px) rotate(360deg);
+   } 
+}
+@keyframes minutes {
+   0% {
+    transform:  translate(0) rotate(0);
+   } 
+   25% {
+    transform:translate(-40px, -40px) rotate(90deg);
+   } 
+   50% {
+    transform:translate(0px, -80px) rotate(180deg);
+   }
+   75% {
+    transform:translate(40px, -40px) rotate(270deg);
+   }
+   100% {
+    transform:translate(0px, 0px) rotate(360deg);
+   } 
 }

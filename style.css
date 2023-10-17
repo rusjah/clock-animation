@@ -217,10 +217,6 @@ body {
    } 
 }
 
-.button:hover ~ .clock-body .small-arrow {
-    animation-play-state: paused;
-}
-
-.batton:hover ~ .clock-body .big-arrow {
+.button:hover ~ .clock-body .arrow {
     animation-play-state: paused;
 }

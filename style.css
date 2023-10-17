@@ -14,8 +14,18 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.button {
+    width: 80px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50% 50% 0 0;
+    margin-bottom: -10px;
+    position: relative;
 }
 
 .clock-body {
@@ -63,9 +73,7 @@ body {
     height: 40px;
     width: 40px;
     border-radius: 100%;
-    /* background-color: aquamarine; */
     text-align: center;
-
 }
 
 .one {
@@ -171,7 +179,7 @@ body {
     width: 7px;
     height: 78px;
     background-color: red;
-    animation: hours 300s linear infinite;
+    animation: hours 30s linear infinite;
 }
 
 @keyframes hours {
@@ -207,4 +215,12 @@ body {
    100% {
     transform:translate(0px, 0px) rotate(360deg);
    } 
+}
+
+.button:hover ~ .clock-body .small-arrow {
+    animation-play-state: paused;
+}
+
+.batton:hover ~ .clock-body .big-arrow {
+    animation-play-state: paused;
 }
